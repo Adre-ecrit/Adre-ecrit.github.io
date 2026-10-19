@@ -1,0 +1,72 @@
+:root {
+  --fond: #faf7f2;
+  --texte: #2a2622;
+  --discret: #6b635a;
+  --accent: #8a3b2a;
+  --trait: #ddd5c8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #1c1a18;
+    --texte: #ece6dc;
+    --discret: #a39a8d;
+    --accent: #e0907a;
+    --trait: #3a3631;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+header, main, footer {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header { padding-top: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--trait); }
+
+.nom {
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--texte);
+  text-decoration: none;
+}
+
+nav { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
+nav a { color: var(--discret); text-decoration: none; font-size: 1rem; }
+nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
+
+main { padding-top: 2rem; padding-bottom: 3rem; }
+
+h1 { font-size: 2rem; line-height: 1.2; font-weight: normal; margin: 0 0 1rem; }
+h2 { font-size: 1.3rem; font-weight: normal; margin: 2.5rem 0 0.5rem; color: var(--accent); }
+
+a { color: var(--accent); }
+.date { color: var(--discret); font-size: 0.95rem; }
+.accroche { font-size: 1.3rem; font-style: italic; color: var(--discret); }
+
+figure { margin: 1.5rem 0; }
+img, video, iframe { max-width: 100%; height: auto; }
+figcaption { color: var(--discret); font-size: 0.95rem; }
+
+.entree { padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--trait); }
+
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid var(--trait);
+  color: var(--discret);
+  font-size: 0.9rem;
+}
+
+.portrait { display: block; width: 100%; max-width: 16rem; border-radius: 4px; margin: 1.5rem 0; }

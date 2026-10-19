@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Photo provisoire">
+  <rect width="400" height="500" fill="#e4dccf"/>
+  <circle cx="200" cy="190" r="70" fill="#b9ad9a"/>
+  <path d="M60 500c0-110 60-170 140-170s140 60 140 170z" fill="#b9ad9a"/>
+</svg>
